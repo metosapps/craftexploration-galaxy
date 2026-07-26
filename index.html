@@ -51,11 +51,12 @@
   .hero h1 .g{color:var(--grass)} .hero h1 .o{color:var(--gold)}
   .hero p.sub{font-size:clamp(1.05rem,2.4vw,1.35rem);color:var(--muted);max-width:620px;margin:18px auto 30px}
   .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .store{display:inline-flex;align-items:center;gap:12px;background:#0a0f0c;border:1px solid var(--line);
-    padding:12px 22px;border-radius:14px}
-  .store .ico{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#ff5a8a,#a742ff);flex:0 0 auto}
-  .store small{display:block;color:var(--muted);font-size:.72rem;letter-spacing:.5px}
-  .store b{font-size:1.05rem}
+  .store{display:inline-block;transition:transform .15s,filter .15s}
+  .store img{height:58px;width:auto;border-radius:12px}
+  .store:hover{transform:translateY(-2px);filter:brightness(1.08)}
+  .appicon{width:112px;height:112px;border-radius:24px;box-shadow:0 14px 40px rgba(0,0,0,.6);
+    border:2px solid rgba(255,255,255,.08);margin-bottom:20px}
+  .brand img.bico{width:32px;height:32px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.5)}
   .heroshot{margin:46px auto 0;max-width:1000px;border-radius:16px;overflow:hidden;border:1px solid var(--line);
     box-shadow:0 30px 80px rgba(0,0,0,.6)}
 
@@ -116,7 +117,7 @@
 
 <header>
   <nav class="wrap">
-    <div class="brand"><span class="cube"></span> Craft Exploration</div>
+    <div class="brand"><img class="bico" src="images/app-icon.png" alt="Craft Exploration icon"> Craft Exploration</div>
     <div class="navlinks">
       <a href="#features">Features</a>
       <a href="#screens">Screenshots</a>
@@ -129,14 +130,12 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
+    <img class="appicon" src="images/app-icon.png" alt="Craft Exploration app icon">
     <span class="badge">🎮 Free Blocky Sandbox Adventure</span>
     <h1><span class="g">CRAFT</span> <span class="o">EXPLORATION</span></h1>
     <p class="sub">Build, mine and explore an <b>endless blocky world</b>. Gather resources, craft tools, survive the night — your imagination is the only limit.</p>
     <div class="cta">
-      <a href="#get" class="store">
-        <span class="ico"></span>
-        <span style="text-align:left"><small>AVAILABLE ON</small><b>Galaxy Store</b></span>
-      </a>
+      <a href="https://galaxystore.samsung.com/detail/com.craftmine.galaxy.freegame" target="_blank" rel="noopener" class="store"><img src="images/galaxy-store-badge.png" alt="Available on Galaxy Store"></a>
       <a href="#screens" class="btn">See Screenshots</a>
     </div>
     <div class="heroshot"><img src="images/craft11.jpg" alt="Craft Exploration gameplay" loading="eager"></div>
@@ -213,11 +212,7 @@
     <h2>Start your adventure today</h2>
     <p>Download Craft Exploration free on the Samsung Galaxy Store.</p>
     <div class="cta">
-      <!-- TODO: replace # with the live Galaxy Store URL after publishing -->
-      <a href="#" class="store" style="border-color:var(--grass)">
-        <span class="ico"></span>
-        <span style="text-align:left"><small>AVAILABLE ON</small><b>Galaxy Store</b></span>
-      </a>
+      <a href="https://galaxystore.samsung.com/detail/com.craftmine.galaxy.freegame" target="_blank" rel="noopener" class="store"><img src="images/galaxy-store-badge.png" alt="Available on Galaxy Store"></a>
     </div>
     <div class="tags" style="justify-content:center">
       <span class="tag">craft</span><span class="tag">crafting</span><span class="tag">building</span>
@@ -230,7 +225,7 @@
 <footer>
   <div class="wrap foot">
     <div>
-      <div class="brand" style="font-size:1rem"><span class="cube"></span> Craft Exploration</div>
+      <div class="brand" style="font-size:1rem"><img class="bico" src="images/app-icon.png" alt="icon"> Craft Exploration</div>
       <p style="margin-top:8px">A free blocky sandbox adventure for Android.</p>
     </div>
     <div style="text-align:right">
