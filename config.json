@@ -1,3 +1,4 @@
+0
 {
   "_comment": "Craft Exploration (com.craftmine.galaxy.freegame) - Samsung Galaxy - v43 engine (direct AdMob). AdMob TEST ads ON, Yandex OFF. KILL SWITCH: app reads first byte; '0'=ads OFF else ON. ~5min cache.",
   "ads_enabled": true,
