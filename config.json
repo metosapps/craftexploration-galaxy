@@ -1,0 +1,17 @@
+{
+  "_comment": "Craft Exploration (com.craftmine.galaxy.freegame) - Samsung Galaxy Store. Dedicated remote config for THIS game only. KILL SWITCH: app reads ONLY the first byte. '0' = ads OFF, anything else = ads ON. ~5 min GitHub cache. Ad IDs are documentation; baked into the APK.",
+  "ads_enabled": true,
+  "admob_app_open_id": "ca-app-pub-3940256099942544/9257395921",
+  "admob_interstitial_id": "ca-app-pub-3940256099942544/1033173712",
+  "admob_rewarded_id": "ca-app-pub-3940256099942544/5224354917",
+  "yandex_interstitial_id": "R-M-19635701-1",
+  "yandex_rewarded_id": "R-M-19635701-3",
+  "yandex_appopen_id": "R-M-19635701-2",
+  "startapp_app_id": "",
+  "cpa_enabled": false,
+  "cpa_offer_url": "",
+  "cpa_offer_title": "Special Offer",
+  "cpa_offer_button": "Get Now",
+  "cpa_show_on_launch": false,
+  "cpa_show_interval_minutes": 30
+}
